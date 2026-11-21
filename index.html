@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PixelShop: videojuegos, consolas y accesorios</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+  <header class="barra">
+    <div class="barra-top">
+      <a href="index.html" class="logo">Pixel<span>Shop</span></a>
+      <div class="accesos">
+        <a href="admin.html">Administrador</a>
+        <a class="carrito" id="carrito" href="carrito.html">Cesta (0)</a>
+      </div>
+    </div>
+    <div class="menu"><nav id="menu-consolas" aria-label="Consolas"></nav></div>
+  </header>
+
+  <section class="hero">
+    <div class="hero-int">
+      <h1>Tu próxima partida empieza aquí</h1>
+      <p>Videojuegos, consolas y accesorios para Switch 2, PS5, Xbox, PS4 y PC. Reserva los próximos lanzamientos y aprovecha las ofertas.</p>
+      <a class="btn-hero" href="#reservas">Ver reservas</a>
+      <a class="btn-hero sec" href="#seccion-ofertas">Ver ofertas</a>
+    </div>
+  </section>
+
+  <main>
+    <section class="seccion"><h2>Compra por consola</h2><div class="tiles" id="tiles"></div></section>
+    <section class="seccion"><h2>Destacados</h2><div class="grid" id="destacados"><p class="estado">Cargando…</p></div></section>
+    <section class="seccion" id="reservas"><h2>Reservas</h2><div class="grid" id="reservas-grid"></div></section>
+    <section class="seccion" id="seccion-ofertas"><h2>Ofertas</h2><div class="grid" id="ofertas"></div></section>
+  </main>
+
+  <footer class="pie">© 2026 PixelShop. Todos los derechos reservados.</footer>
+
+  <script src="js/api.js"></script>
+  <script src="js/index.js"></script>
+</body>
+</html>
